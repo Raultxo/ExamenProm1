@@ -21,7 +21,8 @@
         android:layout_height="wrap_content"
         android:src="@drawable/volver"
         android:adjustViewBounds="true"
-        android:maxWidth="100sp">
+        android:maxWidth="100sp"
+        android:layout_margin="50sp">
     </ImageView>
 
     <Button
