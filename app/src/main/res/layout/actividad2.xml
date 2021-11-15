@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Actividad2"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Selecciona Provincia: ">
+        </TextView>
+        <Spinner
+            android:id="@+id/spinProvincia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </Spinner>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ubicacion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Selecciona Ubicacion: ">
+        </TextView>
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radioCosta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Costa">
+
+            </RadioButton>
+            <RadioButton
+                android:id="@+id/radioInterior"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Interior">
+
+            </RadioButton>
+        </RadioGroup>
+    </LinearLayout>
+    <Button
+        android:id="@+id/btnVisualizar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="VISUALIZAR LISTA"
+        android:onClick="visualizar">
+    </Button>
+    <Button
+        android:id="@+id/idVolver"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="VOLVER"
+        android:layout_gravity="right"
+        android:onClick="volver">
+    </Button>
+</LinearLayout>

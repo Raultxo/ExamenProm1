@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Actividad1"
+    android:orientation="vertical"
+    android:layout_marginHorizontal="10sp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="PERFIL DEL CANDIDATO">
+
+    </TextView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nombre: ">
+
+        </TextView>
+        <EditText
+            android:id="@+id/txtNombre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fecha Nacimiento ">
+        </TextView>
+        <EditText
+            android:id="@+id/txtDia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="dd"
+            android:inputType="number">
+
+        </EditText>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="/"
+            android:layout_marginHorizontal="10sp">
+
+        </TextView>
+        <EditText
+            android:id="@+id/txtMes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="mm"
+            android:inputType="number">
+
+        </EditText>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="/"
+            android:layout_marginHorizontal="10sp">
+
+        </TextView>
+        <EditText
+            android:id="@+id/txtAnio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="aaaa"
+            android:inputType="number">
+
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Provincia: ">
+        </TextView>
+        <Spinner
+            android:id="@+id/spinProvincia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </Spinner>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sexo: ">
+        </TextView>
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radioMasc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Masculino">
+            </RadioButton>
+            <RadioButton
+                android:id="@+id/radioFem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Femenino">
+            </RadioButton>
+
+        </RadioGroup>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Conocimientos">
+
+    </TextView>
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/checkPhp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PHP">
+        </CheckBox>
+        <CheckBox
+            android:id="@+id/checkJava"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="JAVA">
+        </CheckBox>
+        <CheckBox
+            android:id="@+id/checkHtml"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="HTML">
+        </CheckBox>
+        <CheckBox
+            android:id="@+id/checkCss"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CSS">
+        </CheckBox>
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnvaluar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="EVALUAR"
+        android:onClick="evaluar">
+
+    </Button>
+    <TextView
+        android:id="@+id/txtCandidatos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Candidatos: 0">
+    </TextView>
+    <Button
+        android:id="@+id/btnSalir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:text="SALIR"
+        android:onClick="salir">
+
+    </Button>
+</LinearLayout>
